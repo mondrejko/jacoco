@@ -609,6 +609,18 @@
                     </fileSets>
                   </localState>
                 </plugin>
+                <plugin>
+                  <groupId>net.alchim31.maven</groupId>
+                  <artifactId>scala-maven-plugin</artifactId>
+                  <executions>
+                    <execution>
+                      <id>compile</id>
+                      <outputs>
+                        <cacheableBecause>compilation is CPU-bound</cacheableBecause>
+                      </outputs>
+                    </execution>
+                  </executions>
+                </plugin>
               </plugins>
             </develocity>
           </configuration>
