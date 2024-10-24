@@ -35,32 +35,6 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.14.1</version>
         </plugin>
-        <plugin>
-          <groupId>com.gradle</groupId>
-          <artifactId>develocity-maven-extension</artifactId>
-          <configuration>
-            <develocity>
-              <normalization>
-                <runtimeClassPath>
-                  <metaInf>
-                    <ignoredAttributes>
-                      <ignore>Bnd-LastModified</ignore>
-                      <ignore>Bundle-Version</ignore>
-                    </ignoredAttributes>
-                  </metaInf>
-                  <propertiesNormalizations>
-                    <propertiesNormalization>
-                      <path>org/jacoco/core/jacoco.properties</path>
-                      <ignoredProperties>
-                        <ignore>VERSION</ignore>
-                      </ignoredProperties>
-                    </propertiesNormalization>
-                  </propertiesNormalizations>
-                </runtimeClassPath>
-              </normalization>
-            </develocity>
-          </configuration>
-        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
