@@ -207,8 +207,6 @@
               <dependencySourceExcludes>
                 <dependencySourceExclude>org.jacoco:*.test</dependencySourceExclude>
               </dependencySourceExcludes>
-              <doctitle>JaCoCo ${qualified.bundle.version} API</doctitle>
-              <windowtitle>JaCoCo ${qualified.bundle.version} API</windowtitle>
               <use>true</use>
               <version>false</version>
               <groups>
