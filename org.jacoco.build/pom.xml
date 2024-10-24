@@ -470,6 +470,14 @@
                       <ignore>Bundle-Version</ignore>
                     </ignoredAttributes>
                   </metaInf>
+                  <propertiesNormalizations>
+                    <propertiesNormalization>
+                      <path>org/jacoco/core/jacoco.properties</path>
+                      <ignoredProperties>
+                        <ignore>VERSION</ignore>
+                      </ignoredProperties>
+                    </propertiesNormalization>
+                  </propertiesNormalizations>
                 </runtimeClassPath>
               </normalization>
             </develocity>
