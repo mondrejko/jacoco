@@ -472,7 +472,7 @@
                   </metaInf>
                   <propertiesNormalizations>
                     <propertiesNormalization>
-                      <path>org/jacoco/core/jacoco.properties</path>
+                      <path>**/jacoco.properties</path>
                       <ignoredProperties>
                         <ignore>VERSION</ignore>
                       </ignoredProperties>
