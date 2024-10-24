@@ -1,0 +1,16 @@
+<develocity>
+    <server>
+        <url>https://ec2-52-204-76-47.compute-1.amazonaws.com</url>
+        <!-- adjust depending on whether trusted cert is already configured in
+  Develocity: -->
+        <allowUntrusted>true</allowUntrusted>
+    </server>
+    <buildScan>
+        <!-- adjust to your CI provider: -->
+        <backgroundBuildScanUpload>#{env['CI'] == null}</backgroundBuildScanUpload>
+    </buildScan>
+    <buildCache>
+        <local><enabled>false</enabled></local>
+        <remote><enabled>false</enabled></remote>
+    </buildCache>
+</develocity>
